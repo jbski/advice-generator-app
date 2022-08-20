@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+:root {
+
+    --color-light-cyan: hsl(193, 38%, 86%);
+    --color-neon-green: hsl(150, 100%, 66%);
+    --color-grayish-blue: hsl(217, 19%, 38%);
+    --color-dark-grayish-blue: hsl(217, 19%, 24%);
+    --color-dark-blue: hsl(218, 23%, 16%);
+
+    --primary-font-size: 1.75rem; /*28px*/    
+    --font-family: 'Manrope', sans-serif;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-dark-blue);
+    color: var(--color-light-cyan);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+
+
+.main-container {
+    height: min(50%, 800px);
+    width: min(50%, 375px);
+
+    
+}
+
+.main {
+    background-color: var(--color-dark-grayish-blue);
+    color: var(--color-light-cyan);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-image: url('./images/pattern-divider-mobile.svg');
+    background-repeat: no-repeat;
+    background-position:  50% 75%;    
+    margin-bottom: 3rem;
+}
+
+.main p {
+    color: var(--color-neon-green);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .8rem;
+    padding: 2rem 0rem 0rem 0rem;
+}
+
+.main blockquote h1 {
+    font-size: var(--primary-font-size);
+    text-align: center;
+    padding: 1rem 1rem 5rem 1rem;
+    line-height: 1.3;
+}
+
+#dice-container a {
+    background-color: var(--color-neon-green);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem;
+    margin-bottom: -1.4rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+#dice-container a:hover {
+    box-shadow: 0 0 1.5rem var(--color-neon-green);
+}
+
+#dice-container {
+    color: var(--color-grayish-blue);
+}
+
+.bottom-footer .attribution a {
+    color: var(--color-grayish-blue);
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
